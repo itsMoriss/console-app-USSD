@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Administrator\\Desktop\\The Jitu Repo\\jitu-courses-ussd\\jitu-courses-ussd.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\The Jitu Repo\\jitu-courses-ussd\\jitu-courses-ussd.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Administrator\\Desktop\\The Jitu Repo\\jitu-courses-ussd\\jitu-courses-ussd.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\The Jitu Repo\\jitu-courses-ussd\\jitu-courses-ussd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Administrator\\Desktop\\The Jitu Repo\\jitu-courses-ussd\\jitu-courses-ussd.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\The Jitu Repo\\jitu-courses-ussd\\jitu-courses-ussd.csproj",
         "projectName": "jitu-courses-ussd",
-        "projectPath": "c:\\Users\\Administrator\\Desktop\\The Jitu Repo\\jitu-courses-ussd\\jitu-courses-ussd.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\The Jitu Repo\\jitu-courses-ussd\\jitu-courses-ussd.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Administrator\\Desktop\\The Jitu Repo\\jitu-courses-ussd\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\The Jitu Repo\\jitu-courses-ussd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"

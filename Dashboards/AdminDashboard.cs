@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 class AdminDashboard
 {
     public static void Show()

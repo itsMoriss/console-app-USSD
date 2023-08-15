@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 class UserDashboard
 {
     public static void Show(User user)
@@ -7,7 +10,8 @@ class UserDashboard
             Console.WriteLine($"Welcome, {user.Username}!");
             Console.WriteLine("1. View All Courses");
             Console.WriteLine("2. Purchased Courses");
-            Console.WriteLine("3. Logout");
+            Console.WriteLine("3. Purchase a Course");
+            Console.WriteLine("4. Logout");
             Console.Write("Select an option: ");
             int choice = int.Parse(Console.ReadLine());
 
@@ -20,6 +24,9 @@ class UserDashboard
                     ViewPurchasedCourses(user);
                     break;
                 case 3:
+                    PurchaseCourse(user);
+                    break;
+                case 4:
                     Console.WriteLine("Logging out...");
                     return;
                 default:
@@ -31,48 +38,48 @@ class UserDashboard
 
     private static void ViewAllCourses()
     {
+        List<Course> availableCourses = CoursesModule.GetCourses();
+
         Console.WriteLine("Available Courses:");
-        Console.WriteLine("1. C# Full Stack Development @ 50,000");
-        Console.WriteLine("2. JavaScript Full-Stack Development @ 40,000");
-        Console.WriteLine("3. QA/QE @ 20,000");
-        Console.WriteLine("4. WordPress Full Stack Development @ 30,000");
-    }
-
-    private static void ViewAllCoursesAndPurchase(User user)
-    {
-        ViewAllCourses();
-
-        Console.WriteLine("Do you want to purchase a course? (Y/N)");
-        string choice = Console.ReadLine();
-
-        if (choice.ToUpper() == "Y")
+        for (int i = 0; i < availableCourses.Count; i++)
         {
-            PurchaseCourse(user);
+            Console.WriteLine($"{i + 1}. {availableCourses[i].Name} @ {availableCourses[i].Price}");
         }
     }
+
+    // private static void ViewAllCoursesAndPurchase(User user)
+    // {
+    //     ViewAllCourses();
+
+    //     Console.WriteLine("Do you want to purchase a course? (Y/N)");
+    //     string choice = Console.ReadLine();
+
+    //     if (choice.ToUpper() == "Y")
+    //     {
+    //         PurchaseCourse(user);
+    //     }
+    // }
+
 
     private static void ViewPurchasedCourses(User user)
     {
         Console.WriteLine($"Courses purchased by {user.Username}:");
 
-        string[] analyticsLines = File.ReadAllLines("Data/analytics.txt");
-        foreach (string line in analyticsLines)
+        List<Purchase> purchases = AnalyticsModule.GetPurchases();
+        foreach (Purchase purchase in purchases)
         {
-            string[] purchaseData = line.Split(',');
-            string username = purchaseData[0];
-            string courseName = purchaseData[1];
-
-            if (username == user.Username)
+            if (purchase.Username == user.Username)
             {
-                Console.WriteLine($"- {courseName}");
+                Console.WriteLine($"- {purchase.CoursePurchased}");
             }
         }
     }
 
+
     private static void PurchaseCourse(User user)
     {
         List<Course> availableCourses = CoursesModule.GetCourses();
-        
+
         Console.WriteLine("Available Courses:");
         for (int i = 0; i < availableCourses.Count; i++)
         {
@@ -103,5 +110,4 @@ class UserDashboard
             Console.WriteLine("Invalid course number.");
         }
     }
-
 }

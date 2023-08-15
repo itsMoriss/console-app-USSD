@@ -5,14 +5,14 @@ using System.Linq;
 
 class AdminDataAccess
 {
-    private string usersFilePath = "Data/users.txt";
+    private string adminFilePath = "Data/admin.txt";
 
     public List<Admin> GetAdmins()
     {
         List<Admin> admins = new List<Admin>();
-        string[] userLines = File.ReadAllLines(usersFilePath);
+        string[] adminLines = File.ReadAllLines(adminFilePath);
 
-        foreach (string line in userLines)
+        foreach (string line in adminLines)
         {
             string[] userData = line.Split(',');
             string username = userData[0];
@@ -21,10 +21,16 @@ class AdminDataAccess
 
             if (role == "Admin")
             {
-                admins.Add(new Admin(username, password,role));
+                admins.Add(new Admin(username, password, role));
             }
         }
 
         return admins;
+    }
+
+    public void RegisterAdmin(string username, string password)
+    {
+        string adminData = $"{username},{password},Admin";
+        File.AppendAllText(adminFilePath, adminData + Environment.NewLine);
     }
 }

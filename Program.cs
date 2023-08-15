@@ -7,9 +7,11 @@ class Program
         while (true)
         {
             Console.WriteLine("Welcome to Jitu's Course Platform!");
-            Console.WriteLine("1. Register");
-            Console.WriteLine("2. Login");
-            Console.WriteLine("3. Exit");
+            Console.WriteLine("1. Register as User");
+            Console.WriteLine("2. Register as Admin");
+            Console.WriteLine("3. Login as User");
+            Console.WriteLine("4. Login as Admin");
+            Console.WriteLine("5. Exit");
             Console.Write("Select an option: ");
             int choice = int.Parse(Console.ReadLine());
 
@@ -19,20 +21,11 @@ class Program
                     UsersModule.RegisterUser();
                     break;
                 case 2:
+                    AdminModule.RegisterAdmin();
+                    break;
+                case 3:
                     User user = UsersModule.Login();
-                    if (user != null && user.Role == "Admin")
-                    {
-                        Admin admin = AdminModule.Login();
-                        if (admin != null)
-                        {
-                            AdminDashboard.Show();
-                        }
-                        else
-                        {
-                            Console.WriteLine("Admin login failed. Invalid username or password.");
-                        }
-                    }
-                    else if (user != null)
+                    if (user != null)
                     {
                         UserDashboard.Show(user);
                     }
@@ -41,7 +34,18 @@ class Program
                         Console.WriteLine("Login failed. Invalid username or password.");
                     }
                     break;
-                case 3:
+                case 4:
+                    Admin admin = AdminModule.Login();
+                    if (admin != null)
+                    {
+                        AdminDashboard.Show();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Admin login failed. Invalid username or password.");
+                    }
+                    break;
+                case 5:
                     Console.WriteLine("Goodbye!");
                     Environment.Exit(0);
                     break;

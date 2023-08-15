@@ -33,6 +33,18 @@ class AdminModule
         }
     }
 
+    public static void RegisterAdmin()
+    {
+        Console.Write("Enter admin username: ");
+        string username = Console.ReadLine();
+        Console.Write("Enter admin password: ");
+        string password = Console.ReadLine();
+
+        AdminDataAccess adminDataAccess = new AdminDataAccess();
+        adminDataAccess.RegisterAdmin(username, password);
+        Console.WriteLine("Admin registered successfully!");
+    }
+
     public static void ShowAdminDashboard(Admin admin)
     {
         Console.WriteLine($"Welcome, {admin.Username} (Admin)!");
