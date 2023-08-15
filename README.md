@@ -1,1 +1,1 @@
-# console-app-USSD
+# Jitu Courses USSD Console App
