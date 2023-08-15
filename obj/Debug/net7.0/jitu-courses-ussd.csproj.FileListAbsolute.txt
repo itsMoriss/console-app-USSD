@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\The Jitu Repo\jitu-courses-ussd\bin\Debug\net7.0\jitu-courses-ussd.exe
+C:\Users\Administrator\Desktop\The Jitu Repo\jitu-courses-ussd\bin\Debug\net7.0\jitu-courses-ussd.deps.json
+C:\Users\Administrator\Desktop\The Jitu Repo\jitu-courses-ussd\bin\Debug\net7.0\jitu-courses-ussd.runtimeconfig.json
+C:\Users\Administrator\Desktop\The Jitu Repo\jitu-courses-ussd\bin\Debug\net7.0\jitu-courses-ussd.dll
+C:\Users\Administrator\Desktop\The Jitu Repo\jitu-courses-ussd\bin\Debug\net7.0\jitu-courses-ussd.pdb
+C:\Users\Administrator\Desktop\The Jitu Repo\jitu-courses-ussd\obj\Debug\net7.0\jitu-courses-ussd.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\The Jitu Repo\jitu-courses-ussd\obj\Debug\net7.0\jitu-courses-ussd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\The Jitu Repo\jitu-courses-ussd\obj\Debug\net7.0\jitu-courses-ussd.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\The Jitu Repo\jitu-courses-ussd\obj\Debug\net7.0\jitu-courses-ussd.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\The Jitu Repo\jitu-courses-ussd\obj\Debug\net7.0\jitu-courses-ussd.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\The Jitu Repo\jitu-courses-ussd\obj\Debug\net7.0\jitu-courses-ussd.dll
+C:\Users\Administrator\Desktop\The Jitu Repo\jitu-courses-ussd\obj\Debug\net7.0\refint\jitu-courses-ussd.dll
+C:\Users\Administrator\Desktop\The Jitu Repo\jitu-courses-ussd\obj\Debug\net7.0\jitu-courses-ussd.pdb
+C:\Users\Administrator\Desktop\The Jitu Repo\jitu-courses-ussd\obj\Debug\net7.0\jitu-courses-ussd.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\The Jitu Repo\jitu-courses-ussd\obj\Debug\net7.0\ref\jitu-courses-ussd.dll

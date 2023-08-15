@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "jitu-courses-ussd/1.0.0": {
+        "runtime": {
+          "jitu-courses-ussd.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "jitu-courses-ussd/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
